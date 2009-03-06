@@ -1,0 +1,151 @@
+/*	GSh Stylesheet
+	Created by Geoff Stokes.
+	Last modified Mar 14, 2009	*/
+
+body{
+	margin: 0 0 0 0;
+	padding: 0;
+	background-image: url("../images/bodybg.png");
+	background-repeat: repeat-x;
+	background-color: #3c4041;
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+img {
+	border: 0px;
+}
+
+#gshmainheader { /* This object is the header bar, containing links and seach facilities */
+	width: 100%;
+	color: #FFF;
+	background: #000;
+	height: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: 5px;
+}
+
+#gshmainheader img { /* Set text in header to line up in the middle of the image. */
+	margin-bottom: -5px;
+}
+
+#gshmainheader a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#gshmainheader a:link:hover a:visited:hover {
+	color: #CCC;
+	text-decoration: underline overline;
+}
+
+#gshmainheader a:visited {
+	color: #DDD;
+	text-decoration: none;
+}
+
+#insidecontainer { /* This object is what keeps the content centered. */
+	margin: 0 auto;
+	padding: 0;
+	width: 1024px; /* 1024px. Anyone running less can burn in hell. */
+}
+
+#outercontentcontainer { /* This object holds the shadows, main site content and pretty mcuh everything else that's "content" */
+	padding: 0;
+	width: 880px;
+}
+
+#shadowcontainer { /* This object draws the main page drop shadow. */
+	width: 880px;
+	background-image:url("../images/bg-shadow.png");
+	background-repeat: repeat-y;
+	float: left;
+}
+
+#headercontainer { /* This is the spot for the logo and such. */
+	height: 150px;
+	margin-left:20px;
+	padding: 0;
+	width: 840px;
+	background-color: #333;
+}
+
+#realcontentcontainer { /* This object contains the main site content. */
+	margin-left:20px;
+	padding:5px;
+	width: 830px;
+	background-color: #FFFFFF;
+	z-index: 10;
+}
+
+#messagecontainer p{
+	padding: 5px;
+	background-color: #FFFFAA;
+	display:block;
+		border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+#rightcolumn { /* This is the right column. It will contain links, badges and such evil things. */
+	float: right;
+	color: #FFF;
+	width: 144px;
+	text-align: left;
+}
+
+#rightcolumn a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#rightcolumn a:link{
+	color: #FFF;
+}
+
+#rightcolumn a:link:hover{
+	color: #CCC;
+	text-decoration:underline overline;
+}
+
+#rightcolumn a:visited:hover{
+	color: #CCC;
+	text-decoration: underline overline;
+}
+
+#shadowfootercontainer { /* This object draws the page footer's drop shadow, as well as any extra footer content. */
+	width: 880px;
+	background-image:url("../images/shadow-bottom.png");
+	background-repeat:no-repeat;
+	height: 50px;
+	float: left;
+}
+
+#shadowfooter {
+	margin-top: 5px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 2px;
+}
+
+#shadowfooter img{
+	margin-bottom: -3px;
+}
+
+#footercontainer { /* This object draws the page footer */
+	margin-left: 20px;
+	width: 832px;
+	color: #FFF;
+	padding: 4px;
+	background-color: #222;
+	height: 18px;
+}
